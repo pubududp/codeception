@@ -3,24 +3,12 @@
 use Page\Acceptance\Login;
 
 
-class FirstCest
+class LoginCest
 {
     public function _before(AcceptanceTester $I)
     {
     	date_default_timezone_set('GMT');
 
-    }
-
-    // tests
-    public function tryToTest(AcceptanceTester $I)
-    {
-    }
-
-    public function frontPageWorks(AcceptanceTester $I)
-    {
-
-    	$I->amOnPage('/');
-    	$I->see('Login');
     }
 
     public function loginWorks(AcceptanceTester $I)
