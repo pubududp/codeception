@@ -928,7 +928,7 @@ trait AcceptanceTesterActions
         return $this->getScenario()->runStep(new \Codeception\Step\Action('submitForm', func_get_args()));
     }
 
- 
+
     /**
      * [!] Method is generated. Documentation taken from corresponding module.
      *
@@ -942,10 +942,10 @@ trait AcceptanceTesterActions
      * ```
      *
      * @param $field
-     * @param $value
+     * @return mixed|null
      * @see \Codeception\Lib\InnerBrowser::fillField()
      */
-    public function fillField($field, $value) {
+    public function fillField($field) {
         return $this->getScenario()->runStep(new \Codeception\Step\Action('fillField', func_get_args()));
     }
 
